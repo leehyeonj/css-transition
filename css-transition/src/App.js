@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import SpreadCard from './spread-card';
+import logo from "./logo.svg";
+import "./App.css";
+import SpreadCard from "./spread-card";
 
 function App() {
-  return (
-     <SpreadCard/>
-  );
+  return <SpreadCard />;
 }
 
 export default App;
