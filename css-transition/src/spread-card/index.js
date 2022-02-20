@@ -6,12 +6,11 @@ import styled, { css } from "styled-components";
 const SpreadCard = () => {
   const [isSpread, setSpread] = useState(false);
 
-  const handleOnClick = () => {
+  const handleSpread = () => {
     setSpread(!isSpread);
     console.log(isSpread);
   };
 
-  const cards = ["A", "B", "C", "D", "E", "A", "B", "C", "D", "E"];
   const translate3dx = (index) => {
     const value = -50 + 0.5 * index;
     return value;
@@ -35,28 +34,36 @@ const SpreadCard = () => {
     const value = -10 + 1.5 * index;
     return value;
   };
+
+  const selectCard = () => {
+    console.log("select");
+  };
   return (
-    <Perspective onClick={handleOnClick}>
-      <CardContainer className={classnames("card-container")}>
-        <div>
-          {cards.map((p, index) => {
-            return (
-              <Card
-                isSpread={isSpread}
-                key={index}
-                translate3dx={translate3dx(index)}
-                translate3dy={translate3dy(index)}
-                rotate={rotate(index)}
-                rotate3dx={rotate3dx(index)}
-                rotate3dy={rotate3dy(index)}
-              >
-                {p}
-              </Card>
-            );
-          })}
-        </div>
-      </CardContainer>
-    </Perspective>
+    <div>
+      <button onClick={handleSpread}>spread</button>
+      <Perspective>
+        <CardContainer className={classnames("card-container")}>
+          <div>
+            {[...Array(78)].map((p, index) => {
+              return (
+                <Card
+                  isSpread={isSpread}
+                  key={index}
+                  translate3dx={translate3dx(index)}
+                  translate3dy={translate3dy(index)}
+                  rotate={rotate(index)}
+                  rotate3dx={rotate3dx(index)}
+                  rotate3dy={rotate3dy(index)}
+                  onClick={selectCard}
+                >
+                  this is card
+                </Card>
+              );
+            })}
+          </div>
+        </CardContainer>
+      </Perspective>
+    </div>
   );
 };
 
@@ -109,6 +116,9 @@ const Card = styled.div`
           ${(props) => props.rotate3dy}%,
           0
         );
+      &:hover {
+        background: pink;
+      }
     `}
 `;
 export default SpreadCard;
