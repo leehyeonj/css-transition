@@ -1,23 +1,21 @@
 import React from "react";
 import "./styles.css";
+
 const FlippingCard = () => {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <h1>Parallax Flipping Cards</h1>
-      <div class="cols">
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/500/500/)"
-            >
-              <div class="inner">
+      <div className="cols">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Diligord</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -26,16 +24,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="url(https://unsplash.it/511/511/)">
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Rocogged</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -44,19 +42,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/502/502/)"
-            >
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Strizzes</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -65,19 +60,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/503/503/)"
-            >
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Clossyo</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -86,19 +78,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/504/504/"
-            >
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Rendann</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -107,19 +96,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/505/505/)"
-            >
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Reflupper</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -128,19 +114,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/506/506/)"
-            >
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Acirassi</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
@@ -149,19 +132,16 @@ const FlippingCard = () => {
             </div>
           </div>
         </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div
-              class="front"
-              style="background-image: url(https://unsplash.it/508/508/)"
-            >
-              <div class="inner">
+        <div className="col">
+          <div className="container">
+            <div className="front">
+              <div className="inner">
                 <p>Sohanidd</p>
                 <span>Lorem ipsum</span>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div className="back">
+              <div className="inner">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias cum repellat velit quae suscipit c.
