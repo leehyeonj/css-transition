@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import "./styles.scss";
 
 const HoverAround = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  const [ax, setAX] = useState();
+  const [ay, setAY] = useState();
+
+  const onMouseMove = (e) => {
+    setAX(-(width / 2 - e.pageX) / 20);
+    setAY((height / 2 - e.pageY) / 10);
+  };
   return (
-    <div>
-      <div class="card">
-        <div class="card-content">
+    <div onMouseMove={onMouseMove} className="root">
+      <div
+        className="card"
+        style={{ transform: `rotateY(${ax}deg) rotateX(${ay}deg)` }}
+      >
+        <div className="card-content">
           <h1>Just hover around</h1>
           <p>
             <small>
@@ -18,7 +30,7 @@ const HoverAround = () => {
               </a>
             </small>
           </p>
-          <p class="related">
+          <p className="related">
             <strong>See also: </strong>
             <a
               href="https://codepen.io/ariona/details/LVZLGP/"
@@ -31,7 +43,7 @@ const HoverAround = () => {
         </div>
       </div>
 
-      <div class="iklan">
+      <div className="iklan">
         <p>Need PSD to HTML & CSS service?</p>
         <a
           href="https://www.fiverr.com/share/vLevr"
